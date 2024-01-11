@@ -1,10 +1,16 @@
 /* Medium Screens */
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
     .text p {
         max-width: 400px;
         font-size: 1em;
         font-weight: 200;
+    }
+
+    /* Info Selection Styles(Dashboard Navigation) */
+
+    .info-selection li {
+        white-space: nowrap;
     }
     
     /* DMARC Information Styles */

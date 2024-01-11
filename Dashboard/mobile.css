@@ -1,9 +1,10 @@
 /* Small Screens */
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 701px) {
 
     body {
         overflow-x: hidden;
+        min-width: 360px;
     }
     
     /* Header */
@@ -36,15 +37,18 @@
     .info-selection ul {
         list-style-type: none;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .info-selection li {
-        margin: 0px 5%;
+        margin: 0px 3.3%;
         position: relative;
         color: #a6a6a6;
-        font-size: 0.7em;
+        font-size: 0.9em;
         font-weight: var(--semi-bold);
         cursor: pointer;
+        white-space: nowrap;
     }
     
     .info-selection li.active {
@@ -129,6 +133,12 @@
         .box {
             width: 100%;
             margin: 20px 0;
+            padding: 20px 30px;
+        }
+
+        .dmarc-policy div {
+            top: 10%;
+            right: 8%;
         }
     
         .reporting h3 {
