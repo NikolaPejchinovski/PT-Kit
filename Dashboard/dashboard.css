@@ -463,11 +463,16 @@ header {
 /* Small Screens */
 
 @media only screen and (max-width: 601px) {
+
+body {
+    overflow-x: hidden;
+}
+
 /* Header */
 
 header {
     justify-content: flex-start;
-    padding: 0;
+    padding: 0 10px;
 }
 
 /* Info Selection Styles(Dashboard Navigation) */
@@ -515,11 +520,11 @@ header {
 
 .scan-again {
     position: absolute;
-    top: 7%;
+    top: 6.5%;
     right: 0;
-    font-size: 0.5em;
+    font-size: 0.8em;
     padding: 10px 10px;
-    margin: 0;
+    margin: 0 10px;
     border-radius: 20px;
 }
 
@@ -533,6 +538,26 @@ header {
 
     .dmarc-container {
         margin: 75px 50px;
+    }
+
+    .dmarc-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dmarc-info .text {
+        margin: 20px 0;
+
+    }
+
+    .record-value {
+        text-align: center;
+        max-width: 300px;
+        word-break: break-all;
+    }
+
+    .validity h2{
+        display: none;
     }
 
     .dmarc-policy h3 {
