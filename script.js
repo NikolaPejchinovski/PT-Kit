@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (enterDomain.value !== '' && validDomain) {
             domainToScan = enterDomain.value;
-            window.open('/PT-KIT/Dashboard/dashboard.html');
+            window.open('/PT-Kit/Dashboard/dashboard.html');
             console.log(validDomain);
         } else {
             enterDomain.focus();
