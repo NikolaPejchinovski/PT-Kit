@@ -1,0 +1,41 @@
+/* Medium Screens */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .text p {
+        max-width: 400px;
+        font-size: 1em;
+        font-weight: 200;
+    }
+    
+    /* DMARC Information Styles */
+
+    .dmarc-container {
+        margin: 75px 100px;
+    }
+
+    .dmarc-policy h3 {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    
+    .dmarc-policy small {
+        max-width: 230px;
+        font-size: 0.9em;
+    }
+
+    .reporting h3 {
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .recipient {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        color: var(--primary-color);
+        padding: 9px;
+        margin: 20px 0;
+    }
+}
