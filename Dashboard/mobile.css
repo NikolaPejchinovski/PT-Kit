@@ -186,12 +186,53 @@
             display: flex;
             flex-direction: column;
             background-color: var(--secondary-color);
-            border-radius: 15px;
-            height: 245px;
             margin-top: 80px;
             color: white;
-            padding: 40px;
         }
+        
+        .spf-data table {
+            padding: 10px 10px;
+        }
+
+            .spf-data th {
+              position: absolute;
+              left: -9999px;
+            }
+        
+            .spf-data tr {
+              display: block;
+            }
+        
+            .spf-data td {
+              display: block;
+              text-align: right;
+              height: 50px;
+              border-right: none;
+              position: relative;
+              word-break: break-all;
+            }
+
+            .spf-data td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+                padding: 0 20% 0 5px;
+                height: 100%;
+                float: left;
+              }
+
+            .spf-data td::after {
+                content: '';
+                display: block;
+                height: 50px;
+                position: absolute;
+                top: 0;
+                left: 35%;
+                width: 1px;
+                background-color: #274964;
+            }
+
     
         /* Subdomains */
     

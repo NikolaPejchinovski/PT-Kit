@@ -15,7 +15,7 @@
     </div>
     <header>
         <div class="logo">
-            <a href="../Start Screen/index.html"><img src="../img/logo.svg" alt=""></a>
+            <a href="/index.html"><img src="../img/logo.svg" alt=""></a>
         </div>
     </header>
     <main>
@@ -28,7 +28,7 @@
                     <li>Overall Stack</li>
                 </ul>
             </nav>
-            <a href="../Start Screen/index.html"><button class="scan-again" id="scan-again">Scan Again</button></a>
+            <a href="/index.html"><button class="scan-again" id="scan-again">Scan Again</button></a>
         </section>
         <section id="info" class="info">
             <div class="stat-type dmarc-container show">
@@ -76,7 +76,56 @@
             </div>
             <div class="stat-type spf-container">
                 <h1>SPF Report - Summary:</h1>
-                <div class="spf-data"></div>
+                <div class="spf-data">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Prefix</th>
+                            <th>Type</th>
+                            <th>Value</th>
+                            <th>PrefixDesc</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Prefix"></td>
+                            <td data-label="Type">v</td>
+                            <td data-label="Value">spf1</td>
+                            <td data-label="PrefixDesc"></td>
+                            <td data-label="Description">The SPF record version</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Prefix">+</td>
+                            <td data-label="Type">ip4</td>
+                            <td data-label="Value">198.145.29.98</td>
+                            <td data-label="PrefixDesc">Pass</td>
+                            <td data-label="Description">Match if IP is in the given range.</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Prefix">+</td>
+                            <td data-label="Type">include</td>
+                            <td data-label="Value">_spf.google.com</td>
+                            <td data-label="PrefixDesc">Pass</td>
+                            <td data-label="Description">The specified domain is searched for an 'allow'</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Prefix">+</td>
+                            <td data-label="Type">include</td>
+                            <td data-label="Value">amazonses.com</td>
+                            <td data-label="PrefixDesc">Pass</td>
+                            <td data-label="Description">The specified domain is searched for an 'allow'</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Prefix">+</td>
+                            <td data-label="Type">include</td>
+                            <td data-label="Value">mailgun.org</td>
+                            <td data-label="PrefixDesc">Pass</td>
+                            <td data-label="Description">The specified domain is searched for an 'allow'</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
             </div>
             <div class="stat-type subdomains-container">
                 <h1>Found 135 subdomains</h1>

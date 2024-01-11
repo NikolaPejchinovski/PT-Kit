@@ -311,12 +311,33 @@ header {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
-    border-radius: 15px;
-    height: 245px;
     margin-top: 80px;
+    width: 100%;
     color: white;
-    padding: 40px;
 }
+
+
+.spf-data table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+.spf-data  th, td {
+    border: 1px solid #274964;
+    border-left: none;
+    border-top: none;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+  }
+
+.spf-data th:last-child, td:last-child {
+    border-right: none;
+}
+
+.spf-data th {
+    background-color: transparent;
+  }
 
 /* Subdomains Information Styles */
 
