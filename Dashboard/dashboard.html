@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+    <title>PT-Kit</title>
+</head>
+<body>
+    <div class="particles-container">
+        <div id="particles-js"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="../Start Screen/index.html"><img src="../img/logo.svg" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <section id="info-selection-container" class="info-selection-container">
+            <nav class="info-selection">
+                <ul>
+                    <li class="active">DMARC</li>
+                    <li>SPF</li>
+                    <li>Subdomains</li>
+                    <li>Overall Stack</li>
+                </ul>
+            </nav>
+            <a href="../Start Screen/index.html"><button class="scan-again" id="scan-again">Scan Again</button></a>
+        </section>
+        <section id="info" class="info">
+            <div class="stat-type dmarc-container show">
+                <h1>DMARC Report - Summary:</h1>
+                <div class="dmarc-status" id="dmarc-status">
+                    <div class="dmarc-status-info">
+                        <div class="dmarc-info">
+                            <img src="../img/cyber-security 1.svg" alt="icon">
+                            <div class="text">
+                                <h2>DMARC Status</h2>
+                                <p>Your domain has a valid DMARC record and your DMARC policy will prevent
+                                abuse of your domain by phishers and spammers
+                                </p>
+                            </div>
+                            <div class="validity">
+                                <h2>Valid</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record-value">
+                        <h3>Record value:</h3>
+                        <small class="value">v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:fgunarop@ag.dmarcian.com,mailto:dmarc-reports@hackerone.com; ruf=mailto:fgunarop@fr.dmarcian.com</small>
+                    </div>
+                </div>
+                <div class="policy-and-reporting">
+                    <div class="dmarc-policy box">
+                        <div></div>
+                        <img src="../img/icon 2.svg" alt="icon">
+                        <h3>DMARC Policy:</h3>
+                        <small>Your DMARC Policy is set to
+                            automatically reject messages that
+                            fail authorization
+                        </small>
+                    </div>
+                    <div class="reporting box">
+                        <h3>Aggregate (RUA) Reporting:</h3>
+                        <small>Recipients:</small>
+                        <div class="recipient">fgunarop@ag.dmarcian.com</div>
+                        <div class="recipient">dmarc-reports@hackerone.com</div>
+                        <h3>Forensic (RUF) Reporting:</h3>
+                        <small>Recipients:</small>
+                        <div class="recipient">fgunarop@fr.dmarcian.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-type spf-container">
+                <h1>SPF Report - Summary:</h1>
+                <div class="spf-data"></div>
+            </div>
+            <div class="stat-type subdomains-container">
+                <h1>Found 135 subdomains</h1>
+                <div class="subdomain-data">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subdomain</th>
+                                <th>IP Address</th>
+                                <th>Server</th>
+                                <th>Technology</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="active">b.ns.hackerone.com</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>            
+            <div class="stat-type overall-stack-container">
+
+            </div>
+        </section>
+        <section>
+            <br>
+        </section>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="../particles.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
