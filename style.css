@@ -58,8 +58,6 @@ body {
 }
 
 .enter-domain-content {
-    width: 550px;
-    height: 45px;
     position: relative;
 }
 
@@ -125,4 +123,25 @@ body {
 
 .start-scan:active {
     transform: scale(0.96);
+}
+
+
+@media only screen and (max-width: 701px) {
+
+    .pt-kit-logo {
+        width: 200px;
+        margin: -50px 0 30px 0;
+    }
+
+    .enter-domain {
+        width: 300px;
+        height: 45px;
+        padding: 0 50px;
+        font-size: 13px;
+    }
+
+    .start-scan {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
 }
