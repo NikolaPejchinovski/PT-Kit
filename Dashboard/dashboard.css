@@ -27,6 +27,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     overflow-x: hidden;
+    min-width: 340px;
 }
 
 /* Particles In Background */
@@ -379,23 +380,8 @@ header {
     background-color: var(--green);
 }
 
-.subdomain-data table th:nth-child(1) {
-    width: 30%;
-}
-
-.subdomain-data table th:nth-child(2),
-.subdomain-data table td:nth-child(2) {
-    width: 20%;
-}
-
-.subdomain-data table th:nth-child(3),
-.subdomain-data table td:nth-child(3) {
-    width: 20%;
-}
-
 .subdomain-data table th:nth-child(4),
 .subdomain-data table td:nth-child(4) {
-    width: 30%;
     border-right: none;
 }
 

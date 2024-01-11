@@ -44,4 +44,10 @@
         padding: 9px;
         margin: 20px 0;
     }
+
+    /* Subdomain Information Styles */
+
+    .subdomain-data tbody td {
+        white-space: nowrap;
+    }
 }
