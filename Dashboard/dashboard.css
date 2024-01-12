@@ -358,36 +358,49 @@ header {
     color: white;
 }
 
-.subdomain-data table {
-    background-color: var(--secondary-color);
-    border-collapse: collapse;
+.subdomain-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
     width: 100%;
-    margin-top: 80px; 
     color: white;
-    text-align: left;
-    padding: 0;
 }
 
-.subdomain-data table th, .subdomain-data table td {
-    height: 50px; 
-    border-bottom: 1px solid #274964;
-    border-right: 1px solid #274964;
-    padding: 0 15px; 
-}
 
-.subdomain-data table thead th {
+.subdomain-data table {
+    width: 100%;
+    border-collapse: collapse;
     background-color: var(--secondary-color);
-    color: white;
-    font-weight: bold;
+  }
+
+.subdomain-data  th, td {
+    border: 1px solid #274964;
+    border-left: none;
+    border-top: none;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+  }
+
+.subdomain-data td {
+    position: relative;
 }
 
-.subdomain-data table tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+.subdomain-data th:last-child, td:last-child {
+    border-right: none;
 }
 
-.subdomain-data table tbody td:first-child::before {
-    content: '';
+.subdomain-data th {
+    background-color: transparent;
+  }
+
+.subdomain-data tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.active-subdomain.inactive {
     display: inline-block;
+    position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -395,11 +408,14 @@ header {
     background-color: var(--red);
 }
 
-.subdomain-data table tbody td:first-child.active::before {
-    content: '';
+.active-subdomain {
+    position: absolute;
     display: inline-block;
     width: 10px;
     height: 10px;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     margin-right: 15px;
     background-color: var(--green);

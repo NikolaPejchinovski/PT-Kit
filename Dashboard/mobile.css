@@ -234,33 +234,65 @@
     
         /* Subdomains */
     
-        .subdomain-data {
-            overflow-x: auto;
+        .subdomains-container {
+            margin: 75px 35px;
         }
 
-        .subdomains-container {
+        .subdomains-container h1{
+            font-size: 1.6em;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+
+        .subdomain-data {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            margin: 75px 50px;
-        }
-
-        .subdomain-data tbody td {
-            font-size: 0.7em;
-            white-space: nowrap;
-        }
-    
-        .subdomain-data table tbody td:first-child::before {
-            width: 8px;
-            height: 8px;
-            margin-right: 7.5px;
+            background-color: var(--secondary-color);
+            margin-top: 80px;
+            color: white;
         }
         
-        .subdomain-data table tbody td:first-child.active::before {
-            width: 8px;
-            height: 8px;
-            margin-right: 7.5px;
+        .subdomain-data table {
+            padding: 10px 10px;
+            position: relative;
         }
+
+            .subdomain-data th {
+              position: absolute;
+              left: -9999px;
+            }
+        
+            .subdomain-data tr {
+              display: block;
+              font-size: 0.8em;
+            }
+        
+            .subdomain-data td {
+              display: block;
+              text-align: right;
+              padding: 10px;
+              height: 5em;
+              font-size: 90%;
+              border-right: none;
+              position: relative;
+              word-break: break-all;
+            }
+
+            .subdomain-data td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin: 12px 0 0 20px;
+                padding: 0 20% 0 5px;
+                height: 100%;
+                float: left;
+              }
+
+            .subdomain-data td:nth-child(even) {
+                background-color: rgba(255, 255, 255, 0.01);
+            }
+    
 
         /* Handling which type of info is shown */
     
