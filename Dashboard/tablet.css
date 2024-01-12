@@ -45,6 +45,12 @@
         margin: 20px 0;
     }
 
+    /* SPF Information Styles */
+    
+    .spf-container {
+        margin: 75px 70px;
+    }
+
     /* Subdomain Information Styles */
 
     .subdomain-data tbody td {

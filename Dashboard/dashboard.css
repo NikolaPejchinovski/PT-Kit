@@ -310,7 +310,6 @@ header {
 .spf-data {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-color);
     margin-top: 80px;
     width: 100%;
     color: white;
@@ -320,6 +319,7 @@ header {
 .spf-data table {
     width: 100%;
     border-collapse: collapse;
+    background-color: var(--secondary-color);
   }
 
 .spf-data  th, td {
@@ -338,6 +338,10 @@ header {
 .spf-data th {
     background-color: transparent;
   }
+
+.spf-data tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
 
 /* Subdomains Information Styles */
 
