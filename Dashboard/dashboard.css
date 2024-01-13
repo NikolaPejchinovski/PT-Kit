@@ -430,6 +430,63 @@ header {
     border-right: none;
 }
 
+/* Overall Technology Stack Styles */
+
+.overall-stack-container .title-and-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.overall-stack-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 75px 160px;
+}
+
+.overall-stack-container h1{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+}
+
+.overall-stack-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100%;
+    color: white;
+}
+
+
+.overall-stack-data table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--secondary-color);
+  }
+
+.overall-stack-data  th, td {
+    border: 1px solid #274964;
+    border-left: none;
+    border-top: none;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+  }
+
+.overall-stack-data th:last-child, td:last-child {
+    border-right: none;
+}
+
+.overall-stack-data th {
+    background-color: transparent;
+  }
+
+.overall-stack-data tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
 /* Handling which type of info is shown */
 
 .stat-type {

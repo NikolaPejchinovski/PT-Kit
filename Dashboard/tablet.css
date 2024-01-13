@@ -69,4 +69,10 @@
     .subdomain-data table td {
         font-size: 0.7em;
     }
+
+    /* Overall Stack Styles */
+    
+     .overall-stack-container {
+        margin: 75px 70px;
+    }
 }

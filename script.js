@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const magnifyingGlass = document.querySelector('.fa-magnifying-glass');
     const nav = document.querySelectorAll('.info-selection ul li');
     const statTypes = document.querySelectorAll('.stat-type');
+    const subdomainsTable = document.querySelector('.subdomains-table');
 
     let domainToScan;
+
 
     nav.forEach((item, idx) => {
         item.addEventListener('click', () => {
@@ -53,3 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(domainToScan);
     }
 });
+
+function test() {
+    const newTableRow = document.createElement('tr');
+    subdomainsTable.appendChild(newTableRow);
+    for (let i = 0; i < 4; i++) {
+        const newTableData = document.createElement('td');
+        if(i === 0){
+            newTableData.classList.add('subdomain-activity');
+        }
+        newTableRow.appendChild(newTableData);
+    }
+    
+    
+}

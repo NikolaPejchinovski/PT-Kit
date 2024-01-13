@@ -70,7 +70,7 @@
     
     .scan-again {
         position: absolute;
-        top: 6.5%;
+        top: 5%;
         right: 0;
         font-size: 0.8em;
         padding: 10px 10px;
@@ -322,6 +322,76 @@
 
             .subdomain-data tbody td {
                 padding-left: 10px;
+            }
+
+         /* Overall Technology Stack Styles */
+
+         .overall-stack-container .title-and-icon {
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .overall-stack-container .title-and-icon img {
+            width: 50px;
+        }
+
+         .overall-stack-container {
+            margin: 75px 35px;
+        }
+
+        .overall-stack-container h1{
+            font-size: 1.6em;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+
+        .overall-stack-data {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--secondary-color);
+            margin-top: 80px;
+            color: white;
+        }
+        
+        .overall-stack-data table {
+            padding: 10px 10px;
+            position: relative;
+        }
+
+            .overall-stack-data th {
+              position: absolute;
+              left: -9999px;
+            }
+        
+            .overall-stack-data tr {
+              display: block;
+              font-size: 0.8em;
+            }
+        
+            .overall-stack-data td {
+              display: block;
+              text-align: right;
+              padding: 10px;
+              height: 5em;
+              font-size: 90%;
+              border-right: none;
+              position: relative;
+              word-break: break-all;
+            }
+
+            .overall-stack-data td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin: 12px 0 0 0px;
+                padding: 0 20% 0 5px;
+                height: 100%;
+                float: left;
+              }
+
+            .overall-stack-data td:nth-child(even) {
+                background-color: rgba(255, 255, 255, 0.01);
             }
     
 
