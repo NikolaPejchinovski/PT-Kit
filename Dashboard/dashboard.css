@@ -398,27 +398,27 @@ header {
     background-color: rgba(255, 255, 255, 0.03);
 }
 
-.active-subdomain.inactive {
-    display: inline-block;
+.subdomain-activity {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 15px;
-    background-color: var(--red);
-}
-
-.active-subdomain {
-    position: absolute;
-    display: inline-block;
     width: 10px;
     height: 10px;
     top: 50%;
-    left: 5%;
+    left: 18px;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    margin-right: 15px;
+    background-color: var(--red);
+}
+
+
+.subdomain-activity.active {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     background-color: var(--green);
+}
+
+.subdomain-data tbody td {
+    padding-left: 40px;
 }
 
 .subdomain-data table th:nth-child(4),

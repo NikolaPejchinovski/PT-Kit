@@ -53,7 +53,20 @@
 
     /* Subdomain Information Styles */
 
+    .subdomains-container {
+        margin: 75px 70px;
+    }
+
     .subdomain-data tbody td {
         white-space: nowrap;
+    }
+
+    .subdomain-data table thead th {
+        font-size: 0.8em;
+
+    }
+
+    .subdomain-data table td {
+        font-size: 0.7em;
     }
 }

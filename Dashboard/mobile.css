@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #152735;
+    --secondary-color: #0F1C26;
+    --red: #B51C1C;
+    --green: #4BFD2E;
+    --semi-bold: 600;
+}
+
 /* Small Screens */
 
 @media only screen and (max-width: 701px) {
@@ -221,7 +229,7 @@
                 content: attr(data-label);
                 font-weight: bold;
                 display: block;
-                margin-bottom: 0;
+                margin: 12px 0 0 0px;
                 padding: 0 20% 0 5px;
                 height: 100%;
                 float: left;
@@ -291,6 +299,29 @@
 
             .subdomain-data td:nth-child(even) {
                 background-color: rgba(255, 255, 255, 0.01);
+            }
+
+            .subdomain-activity {
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                top: 50%;
+                left: 18px;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                background-color: var(--red);
+            }
+
+            
+            .subdomain-activity.active {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: var(--green);
+            }
+
+            .subdomain-data tbody td {
+                padding-left: 10px;
             }
     
 
