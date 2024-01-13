@@ -54,7 +54,15 @@ body {
 
 .pt-kit-logo {
     width: 256px;
-    margin: -50px 0 50px 0;
+    margin: -50px 0 0px 0;
+}
+
+.tagline {
+    color: white;
+    font-family: inherit;
+    font-size: 1em;
+    margin: 25px;
+    font-weight: 200;
 }
 
 .enter-domain-content {
@@ -132,6 +140,10 @@ body {
     .pt-kit-logo {
         width: 200px;
         margin: -50px 0 30px 0;
+    }
+
+    .tagline {
+        margin: 0 0 15px 0;
     }
 
     .enter-domain {
