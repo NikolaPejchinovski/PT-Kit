@@ -111,26 +111,7 @@ try {
       },
       "retina_detect": true
     });
-  
-    const stats = new Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-  
-    const countParticles = document.querySelector('.js-count-particles');
-  
-    function update() {
-      stats.begin();
-      stats.end();
-      if (window.pJSDom[0]?.pJS?.particles?.array) {
-        countParticles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
-    }
-  
-    requestAnimationFrame(update);
+
   } catch (e) {
     console.error(e);
   }

@@ -393,6 +393,23 @@
             .overall-stack-data td:nth-child(even) {
                 background-color: rgba(255, 255, 255, 0.01);
             }
+
+        /* Contact Form Styles */
+
+        .contact {
+            align-items: center;
+        }
+
+        .contact-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 75px 35px;
+        }
+
+        .contact-text h1 {
+            font-size: 2em;
+        }
     
 
         /* Handling which type of info is shown */

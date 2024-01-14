@@ -77,7 +77,7 @@
             <div class="stat-type spf-container">
                 <h1>SPF Report - Summary:</h1>
                 <div class="spf-data">
-                    <table>
+                    <table aria-label="SPF Information Table">
                         <thead>
                           <tr>
                             <th>Prefix</th>
@@ -130,7 +130,7 @@
             <div class="stat-type subdomains-container">
                 <h1>Found 135 subdomains</h1>
                 <div class="subdomain-data">
-                    <table class="subdomains-table">
+                    <table class="subdomains-table" aria-label="Subdomain Information Data">
                         <thead>
                             <tr>
                                 <th>Subdomain</th>
@@ -171,7 +171,7 @@
             <div class="stat-type overall-stack-container">
                 <div class="title-and-icon"><img src="../img/icon 3.svg" alt=""><h1>Technology Stack</h1></div>
                 <div class="overall-stack-data">
-                    <table>
+                    <table aria-label="Overall Technology Stack Information">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -212,9 +212,30 @@
                 </div>
             </div>
         </section>
-        <section>
-            <br>
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h1>Enhance our cyber defenses with your feedback.
+                        Get In Touch...</h1>
+                    <small>Share insights or concerns in the contact box below.
+                        Thank you for contributing to our cybersecurity efforts!</small>
+                </div>
+                <form action="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" class="name" placeholder="Your full name:">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" class="email" placeholder="youremail@email.com">
+                    <label for="message">Message:</label>
+                    <textarea type="text" name="message" id="message" class="message" placeholder="Ex. Hello, I would like to suggest adding a feature to the app"></textarea>
+                    <div class="submit-button-container">
+                        <button type="submit" class="submit">Send</button>
+                    </div>
+                </form>
+            </div>
         </section>
+        <footer>
+
+        </footer>
     </main>
 
     
