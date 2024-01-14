@@ -121,7 +121,6 @@ try {
 
   window.addEventListener('scroll', () => {
     let scrollProgress = window.scrollY;
-    console.log(body.offsetHeight)
     particlesContainer.style.transform = `translateY(${(clamp(scrollProgress, 0, (body.offsetHeight - 1000)))}px)`;
 
   });
