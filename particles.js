@@ -120,7 +120,7 @@ try {
 
   window.addEventListener('scroll', () => {
     let scrollProgress = window.scrollY;
-    particlesContainer.style.transform = `translateY(${(clamp(scrollProgress, 0, (window.innerHeight + 300)))}px)`;
+    particlesContainer.style.transform = `translateY(${(clamp(scrollProgress, 0, 2120))}px)`;
 
   });
 
