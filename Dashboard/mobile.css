@@ -104,6 +104,7 @@
             text-align: center;
             max-width: 300px;
             word-break: break-all;
+            margin-top: 30px;
         }
     
         .validity h2{
@@ -118,10 +119,6 @@
         .dmarc-policy small {
             max-width: 175px;
             font-size: 0.9em;
-        }
-    
-        .record-value {
-            margin-top: 30px;
         }
         
         .record-value h3 {
@@ -151,12 +148,6 @@
     
         .reporting h3 {
             font-size: 1.6em;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-    
-        .reporting h3 {
-            font-size: 1.3em;
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -415,8 +406,22 @@
 
         .footer-container {
             flex-direction: column;
+            align-items: center;
             gap: 100px;
             padding: 150px 75px;
+        }
+
+        .logo-quote {
+            text-align: center;
+        }
+
+        .links {
+            text-align: center;
+        }
+
+        .our-office {
+            text-align: center;
+            padding-left: 0px;
         }
     
 

@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+const particlesContainer = document.querySelector('.particles-container');
     
 try {
     particlesJS("particles-js", {
@@ -116,4 +118,13 @@ try {
     console.error(e);
   }
 
+  window.addEventListener('scroll', () => {
+    let scrollProgress = window.scrollY;
+    particlesContainer.style.transform = `translateY(${(clamp(scrollProgress, 0, (window.innerHeight + 300)))}px)`;
+
+  });
+
+
 });
+
+

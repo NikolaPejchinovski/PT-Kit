@@ -75,4 +75,27 @@
      .overall-stack-container {
         margin: 75px 70px;
     }
+
+    /* Footer */
+
+    .footer-container {
+        padding: 150px 75px;
+    }
+
+    .logo-quote {
+        font-size: 0.9em;
+    }
+
+    .logo-quote img {
+        width: 250px;
+    }
+
+    .links {
+        font-size: 0.9em;
+    }
+
+    .our-office {
+        padding-left: 0px;
+        font-size: 0.9em;
+    }
 }

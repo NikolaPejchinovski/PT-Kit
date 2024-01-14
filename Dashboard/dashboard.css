@@ -609,11 +609,19 @@ footer {
 .logo-quote {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 300px;
 }
 
 .logo-quote img {
-    width: 250px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.logo-quote p {
+    font-weight: 200;
+    font-size: 1em;
+    max-width: 250px;
 }
 
 .links {
@@ -624,11 +632,19 @@ footer {
 .our-office {
     display: flex;
     flex-direction: column;
+    padding-left: 100px;
+}
+
+.our-office small {
+    margin: 10px 0;
+    max-width: 175px;
+    font-weight: 200;
 }
 
 .footer-container a {
     text-decoration: none;
     color: white;
+    margin: 10px;
 }
 
 .footer-container a:hover {
