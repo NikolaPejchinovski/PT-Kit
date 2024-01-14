@@ -410,6 +410,14 @@
         .contact-text h1 {
             font-size: 2em;
         }
+
+        /* Footer */
+
+        .footer-container {
+            flex-direction: column;
+            gap: 100px;
+            padding: 150px 75px;
+        }
     
 
         /* Handling which type of info is shown */

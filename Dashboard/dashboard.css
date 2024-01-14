@@ -591,6 +591,50 @@ header {
    transform: scale(0.95);
 }
 
+/* Footer Style */
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 150px;
+}
+
+.logo-quote {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.logo-quote img {
+    width: 250px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-office {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a:hover {
+    opacity: 0.5;
+}
+
 
 
 
