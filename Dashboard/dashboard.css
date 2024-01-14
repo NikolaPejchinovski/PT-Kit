@@ -18,17 +18,15 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background-color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
     overflow-x: hidden;
     min-width: 340px;
+    min-height:100vh;
 }
+
+
 
 /* Particles In Background */
 .particles-container {

@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const magnifyingGlass = document.querySelector('.fa-magnifying-glass');
     const nav = document.querySelectorAll('.info-selection ul li');
     const statTypes = document.querySelectorAll('.stat-type');
-    const subdomainsTable = document.querySelector('.subdomains-table');
 
     let domainToScan;
 
