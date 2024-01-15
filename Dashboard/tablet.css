@@ -16,7 +16,7 @@
     /* DMARC Information Styles */
 
     .dmarc-container {
-        margin: 75px 100px;
+        margin: 75px 75px;
     }
 
     .dmarc-policy h3 {
@@ -74,6 +74,12 @@
     
      .overall-stack-container {
         margin: 75px 70px;
+    }
+
+    /* Contact Form Styles */
+
+    .contact-container {
+        margin: 75px 75px;
     }
 
     /* Footer */
