@@ -38,93 +38,71 @@
                         <div class="dmarc-info">
                             <img src="../img/cyber-security 1.svg" alt="icon">
                             <div class="text">
-                                <h2>DMARC Status</h2>
-                                <p>Your domain has a valid DMARC record and your DMARC policy will prevent
+                                <h2 id="dmarc-status">DMARC Status</h2>
+                                <p id="dmarc-text">Your domain has a valid DMARC record and your DMARC policy will prevent
                                 abuse of your domain by phishers and spammers
                                 </p>
                             </div>
-                            <div class="validity">
+                            <div class="validity" id="dmarc-validity">
                                 <h2>Valid</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="record-value">
+                    <div class="record-value" id="record-value">
                         <h3>Record value:</h3>
                         <small class="value">v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:fgunarop@ag.dmarcian.com,mailto:dmarc-reports@hackerone.com; ruf=mailto:fgunarop@fr.dmarcian.com</small>
                     </div>
                 </div>
                 <div class="policy-and-reporting">
                     <div class="dmarc-policy box">
-                        <div></div>
+                        <div id="dmarc-policy-validity"></div>
                         <img src="../img/icon 2.svg" alt="icon">
-                        <h3>DMARC Policy:</h3>
-                        <small>Your DMARC Policy is set to
+                        <h3 id="dmarc-policy">DMARC Policy:</h3>
+                        <small id="dmarc-policy-text">Your DMARC Policy is set to
                             automatically reject messages that
                             fail authorization
                         </small>
                     </div>
                     <div class="reporting box">
-                        <h3>Aggregate (RUA) Reporting:</h3>
-                        <small>Recipients:</small>
-                        <div class="recipient">fgunarop@ag.dmarcian.com</div>
-                        <div class="recipient">dmarc-reports@hackerone.com</div>
-                        <h3>Forensic (RUF) Reporting:</h3>
-                        <small>Recipients:</small>
-                        <div class="recipient">fgunarop@fr.dmarcian.com</div>
+                        <div class="rua">
+                            <h3>Aggregate (RUA) Reporting:</h3>
+                            <small>Recipients:</small>
+                            <div class="rua-recipients">
+                                <div class="recipient">fgunarop@ag.dmarcian.com</div>
+                                <div class="recipient">dmarc-reports@hackerone.com</div>
+                            </div>
+                        </div>
+                        <div class="ruf">
+                            <h3>Forensic (RUF) Reporting:</h3>
+                            <small>Recipients:</small>
+                            <div class="ruf-recipients">
+                                <div class="recipient">fgunarop@fr.dmarcian.com</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="stat-type spf-container">
                 <h1>SPF Report - Summary:</h1>
                 <div class="spf-data">
-                    <table aria-label="SPF Information Table">
-                        <thead>
-                          <tr>
-                            <th>Prefix</th>
-                            <th>Type</th>
-                            <th>Value</th>
-                            <th>PrefixDesc</th>
-                            <th>Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td data-label="Prefix:"></td>
-                            <td data-label="Type:">v</td>
-                            <td data-label="Value:">spf1</td>
-                            <td data-label="PrefixDesc:"></td>
-                            <td data-label="Description:">The SPF record version</td>
-                          </tr>
-                          <tr>
-                            <td data-label="Prefix:">+</td>
-                            <td data-label="Type:">ip4</td>
-                            <td data-label="Value:">198.145.29.98</td>
-                            <td data-label="PrefixDesc:">Pass</td>
-                            <td data-label="Description:">Match if IP is in the given range.</td>
-                          </tr>
-                          <tr>
-                            <td data-label="Prefix:">+</td>
-                            <td data-label="Type:">include</td>
-                            <td data-label="Value:">_spf.google.com</td>
-                            <td data-label="PrefixDesc:">Pass</td>
-                            <td data-label="Description:">The specified domain is searched for an 'allow'</td>
-                          </tr>
-                          <tr>
-                            <td data-label="Prefix:">+</td>
-                            <td data-label="Type:">include</td>
-                            <td data-label="Value:">amazonses.com</td>
-                            <td data-label="PrefixDesc:">Pass</td>
-                            <td data-label="Description:">The specified domain is searched for an 'allow'</td>
-                          </tr>
-                          <tr>
-                            <td data-label="Prefix:">+</td>
-                            <td data-label="Type:">include</td>
-                            <td data-label="Value:">mailgun.org</td>
-                            <td data-label="PrefixDesc:">Pass</td>
-                            <td data-label="Description:">The specified domain is searched for an 'allow'</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="spf-info-box">
+                        <div class="spf-info">
+                            <img src="../img/cyber-security 1.svg" alt="icon">
+                            <div class="text">
+                                <h2 id="spf-data">SPF Data</h2>
+                                <p id="spf-data-text">Your domain has a valid SPF record and your SPF policy will prevent
+                                abuse of your domain by phishers and spammers
+                                </p>
+                            </div>
+                            <div class="validity" id="spf-validity">
+                                <h2>Valid</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record-value">
+                        <h3>Record value:</h3>
+                        <small class="value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe nostrum magni nulla error commodi ex, omnis minima asperiores impedit!</small>
+                    </div>
                 </div>
             </div>
             <div class="stat-type subdomains-container">
@@ -220,47 +198,21 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <div class="contact-container">
-                <div class="contact-text">
-                    <h1>Enhance our cyber defenses with your feedback.
-                        Get In Touch...</h1>
-                    <small>Share insights or concerns in the contact box below.
-                        Thank you for contributing to our cybersecurity efforts!</small>
-                </div>
-                <form action="post" class="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" class="name" placeholder="Your full name:">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" class="email" placeholder="youremail@email.com">
-                    <label for="message">Message:</label>
-                    <textarea type="text" name="message" id="message" class="message" placeholder="Ex. Hello, I would like to suggest adding a feature to the app"></textarea>
-                    <div class="submit-button-container">
-                        <button type="submit" class="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div class="footer-container">
-                <div class="logo-quote">
-                    <img src="../img/logo.svg" alt="logo">
-                    <p>“The prudent see danger and take refuge, but the naive proceed, and pay the penalty”</p>
-                </div>
-                <div class="links">
-                    <a href="https://universalmind.io">Universal Mind</a>
-                    <a href="https://universalmind.io/privacypolicy">Privacy Policy</a>
-                    <a href="https://linkedin.com/company/universalmindisrael/">Follow Us</a>
-                </div>
-                <div class="our-office">
-                    <strong>Our Office</strong>
-                    <small>Address: B.S.R 3 Tower, Metsada St 9, Bnei Brak</small>
-                    <small>Phone: +972(0)747746173</small>
-                    <small>Email: contact@universalmind.io</small>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-quote">
+                <img src="../img/logo.svg" alt="logo">
+                <p>“The prudent see danger and take refuge, but the naive proceed, and pay the penalty”</p>
+            </div>
+            <div class="links">
+                <a href="https://universalmind.io">Universal Mind</a>
+                <a href="/InquiryBox/inquiry-box.html">Inquiry Box</a>
+                <a href="https://universalmind.io/privacypolicy">Privacy Policy</a>
+                <a href="https://linkedin.com/company/universalmindisrael/">Follow Us</a>
+            </div>
+        </div>
+    </footer>
 
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 

@@ -141,7 +141,7 @@
             padding: 20px 30px;
         }
 
-        .dmarc-policy div {
+        .dmarc-policy #dmarc-policy-validity {
             top: 10%;
             right: 8%;
         }
@@ -172,7 +172,7 @@
         /* SPF Information Styles */
 
         .spf-container {
-            margin: 75px 35px;
+            margin: 75px 50px;
         }
 
         .spf-container h1{
@@ -189,48 +189,17 @@
             margin-top: 80px;
             color: white;
         }
-        
-        .spf-data table {
-            padding: 10px 10px;
-            position: relative;
+
+        .spf-info {
+            flex-direction: column;
+            text-align: center;
         }
-
-            .spf-data th {
-              position: absolute;
-              left: -9999px;
-            }
-        
-            .spf-data tr {
-              display: block;
-              font-size: 0.8em;
-            }
-        
-            .spf-data td {
-              display: block;
-              text-align: right;
-              padding: 10px;
-              height: 5em;
-              font-size: 90%;
-              border-right: none;
-              position: relative;
-              word-break: break-all;
-            }
-
-            .spf-data td::before {
-                content: attr(data-label);
-                font-weight: bold;
-                display: block;
-                margin: 12px 0 0 0px;
-                padding: 0 20% 0 5px;
-                height: 100%;
-                float: left;
-              }
-
-            .spf-data td:nth-child(even) {
-                background-color: rgba(255, 255, 255, 0.01);
-            }
-
     
+        .spf-info .text {
+            margin: 20px 0;
+    
+        }
+        
         /* Subdomains */
     
         .subdomains-container {
